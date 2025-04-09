@@ -40,7 +40,7 @@ function ProfessionalExperience() {
       <div className="experience-item">
         <h3><FaLaptopCode size={30} /> Software Engineer Intern</h3>
         <p><strong>Payoda Inc.</strong> - Coimbatore, India</p>
-        <p><em>Dec 2020 - Aug 2023</em></p>
+        <p><em>Dec 2020 - Aug 2021</em></p>
 
         <div className="career-dropdown" onClick={() => setExperience2Open(!isExperience2Open)}>
   <span>My Contributions</span>

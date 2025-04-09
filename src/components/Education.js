@@ -25,7 +25,7 @@ function Education() {
 
         {isMasterCoursesOpen && (
           <ul className="course-list">
-            <li>Algorithms Anal & Dsgn 1, Data Models Query Lang, Intro Machine Learning, Data Intensive Computing</li>
+            <li>Algorithms Analysis & Design 1, Data Models Query Language, Intro to Machine Learning, Data Intensive Computing</li>
             <li>Deep Learning, Computer Vision & Image Processing, Operating Systems, Reinforcement Learning</li>
             <li>Computer Security, Statistical Data Mining I</li>
           </ul>
@@ -45,7 +45,7 @@ function Education() {
 
         {isBachelorCoursesOpen && (
           <ul className="course-list">
-            <li>Programming in C, Data Structures, Cyber Security, Oops</li>
+            <li>Programming in C, Data Structures, Cyber Security, OOPs</li>
             <li>Project and Finance Management</li>
           </ul>
         )}

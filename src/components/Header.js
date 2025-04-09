@@ -9,10 +9,10 @@ function Header() {
       </div>
       <nav>
         <ul className="nav-links">
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#professional-experience">Experience</a></li>
           <li><a href="#technical-skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/sanandraj/" target="_blank" rel="noopener noreferrer">
