@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {
-  FaGithub
-} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 function Projects() {
   const [visibleProjects, setVisibleProjects] = useState([]);
@@ -98,6 +96,24 @@ const projects = [
       'Developed an interactive Streamlit app to visualize predictions and improve user insights.',
     ],
     github: 'https://github.com/your-username/startup-success-predictor',
+  },
+  {
+    title: 'Work-Life Balance Classification',
+    tech: 'R, Grid Search, dplyr, tidyr, caret, ggplot2',
+    description: [
+      'Performed classification on IBM HR Analytics dataset using KNN, SVM, RF, and XGBoost, achieving 94.26% accuracy with SVM.',
+      'Fine-tuned SVM hyperparameters (C=1, γ=1) using grid search with 80-20 train-test split.',
+    ],
+    github: 'https://github.com/your-username/work-life-balance-classification',
+  },
+  {
+    title: 'Sentiment Analysis on IMDb Movie Reviews',
+    tech: 'Python, NLP, TensorFlow, Matplotlib',
+    description: [
+      'Built and optimized LSTM, BiLSTM, BERT, and CNN models for sentiment analysis, achieving ~90% accuracy.',
+      'Conducted hyperparameter tuning and reduced model training time by 30% while maintaining accuracy.',
+    ],
+    github: 'https://github.com/your-username/imdb-sentiment-analysis',
   },
 ];
 
