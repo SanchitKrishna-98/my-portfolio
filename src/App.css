@@ -211,55 +211,69 @@ body {
 
 /* Projects Section */
 .projects {
-  padding: 10px 10px;
+  padding: 20px;
+  background-color: #fff;
   text-align: center;
 }
 
-.project {
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  cursor: pointer;
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.projects h2 {
-  font-size: 2rem;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.project:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.project-details {
-  padding: 10px 0;
-  color: #666;
-  font-size: 1rem;
-}
-
-.project-header span {
+.project-card h3 {
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.project-details a {
-  color: #2575fc;
+.project-card .tech {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card ul li {
+  margin-bottom: 8px;
+}
+
+.project-link {
+  color: #007bff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.project-details a:hover {
-  text-decoration: underline;
+.project-link:hover {
+  color: #ff6347;
 }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Contact Section */
 .contact {
@@ -286,7 +300,7 @@ body {
 
 /* Professional Experience Section */
 .professional-experience {
-  padding: 10px10px;
+  padding: 10px 10px;
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -354,23 +368,52 @@ body {
   transition: color 0.3s ease;
 }
 
+.chevron-icon svg {
+  transition: color 0.3s;
+  color: #555;
+}
+
+.chevron-icon:hover svg {
+  color: #ff6347;
+}
+
+.chevron-icon.open svg {
+  color: #ff6347;
+}
+
 .career-list {
-  list-style-type: none;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #f1f1f1;
-  border-radius: 8px;
+  list-style: none;
+  padding-left: 0;
 }
 
-.career-list li {
-  font-size: 1rem;
-  color: #333;
-  padding: 5px;
+.list-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+  display: flex;
+  align-items: flex-start;
+  margin: 8px 0;
+  transition: color 0.3s;
 }
 
-.career-list li:hover {
-  background-color: #e0e0e0;
+.list-item .arrow {
+  color: #555;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
+
+.list-item:hover .arrow {
+  color: #ff6347;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Technical Skills Section */
 .technical-skills {
@@ -459,51 +502,44 @@ body {
 
 /* Awards and Involvement Section */
 .awards-involvement {
-  padding: 60px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  background: #f9f9f9;
 }
 
-.awards-header {
+.awards-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.achievements-box {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-box ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.auto-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  gap: 10px; /* space between heading and icon */
+  min-height: 200px;
 }
 
-.awards-header h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 0;
+.full-cert-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: opacity 0.5s ease-in-out;
 }
-
-.dropdown-icon {
-  color: #2575fc;
-  transition: color 0.3s ease;
-}
-
-.awards-header:hover .dropdown-icon {
-  color: #ff6347; /* hover effect for icon */
-}
-
-.award-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 20px auto;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  padding: 10px;
-  width: fit-content;
-}
-
-.award-list li {
-  font-size: 1.1rem;
-  color: #333;
-  padding: 5px 10px;
-}
-
-.award-list li:hover {
-  background-color: #e0e0e0;
-}
-

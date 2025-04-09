@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaUniversity, FaGraduationCap } from 'react-icons/fa';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaUniversity, FaGraduationCap, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 function Education() {
   const [isMasterCoursesOpen, setMasterCoursesOpen] = useState(false);
@@ -11,27 +10,24 @@ function Education() {
 
   return (
     <section className="education" id="education">
-      <h2> Education</h2>
+      <h2>Education</h2>
 
       {/* Master of Science Degree */}
       <div className="education-item">
         <h3><FaGraduationCap /> Master of Science in Computer Science</h3>
-        <p><FaUniversity /> University at Buffalo</p>
+        <p><FaUniversity /> University at Buffalo, SUNY | Buffalo, NY</p>
         <p>Expected Graduation: May 2025</p>
 
-        {/* Dropdown for courses */}
         <div className="course-dropdown" onClick={toggleMasterCourses}>
-          <span>Click to see courses</span>
+          <span>Related courses</span>
           {isMasterCoursesOpen ? <FaChevronUp /> : <FaChevronDown />}
         </div>
 
         {isMasterCoursesOpen && (
           <ul className="course-list">
-            <li>Data Structures</li>
-            <li>Algorithms</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Database Systems</li>
+            <li>Algorithms Anal & Dsgn 1, Data Models Query Lang, Intro Machine Learning, Data Intensive Computing</li>
+            <li>Deep Learning, Computer Vision & Image Processing, Operating Systems, Reinforcement Learning</li>
+            <li>Computer Security, Statistical Data Mining I</li>
           </ul>
         )}
       </div>
@@ -39,22 +35,18 @@ function Education() {
       {/* Bachelor of Engineering Degree */}
       <div className="education-item">
         <h3><FaGraduationCap /> Bachelor of Engineering in Electronics and Communication Engineering</h3>
-        <p><FaUniversity /> Sri Ramakrishna Engineering College affiliated to Anna University</p>
+        <p><FaUniversity /> Anna University | India</p>
         <p>Graduated: May 2021</p>
 
-        {/* Dropdown for courses */}
         <div className="course-dropdown" onClick={toggleBachelorCourses}>
-          <span>Click to see courses</span>
+          <span>Related courses</span>
           {isBachelorCoursesOpen ? <FaChevronUp /> : <FaChevronDown />}
         </div>
 
         {isBachelorCoursesOpen && (
           <ul className="course-list">
-            <li>Analog Electronics</li>
-            <li>Digital Logic Design</li>
-            <li>Microprocessors</li>
-            <li>Communication Systems</li>
-            <li>Control Systems</li>
+            <li>Programming in C, Data Structures, Cyber Security, Oops</li>
+            <li>Project and Finance Management</li>
           </ul>
         )}
       </div>

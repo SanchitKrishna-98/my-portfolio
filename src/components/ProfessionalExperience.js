@@ -7,7 +7,7 @@ function ProfessionalExperience() {
 
   return (
     <section className="professional-experience" id="professional-experience">
-      <h2>Professional Experience</h2>
+      <h2> Professional Experience</h2>
 
       {/* Trimble */}
       <div className="experience-item">
@@ -16,9 +16,10 @@ function ProfessionalExperience() {
         <p><em>Oct 2021 - Dec 2023</em></p>
 
         <div className="career-dropdown" onClick={() => setExperience1Open(!isExperience1Open)}>
-          <span>My Contributions</span>
-          {isExperience1Open ? <FaChevronUp /> : <FaChevronDown />}
-        </div>
+  <span>My Contributions</span>
+  {isExperience1Open ? <FaChevronUp style={{ color: '#ff6347' }} /> : <FaChevronDown />}
+</div>
+
 
         {isExperience1Open && (
           <ul className="career-list">
@@ -27,7 +28,7 @@ function ProfessionalExperience() {
               "Contributed in the development of the Vue Field Manager for Trimble Agriculture Solutions, which turned out to be a driving factor in a $2 billion joint venture between AGCO and Trimble.",
               "Deployed a React and AWS-based interview management dashboard (Lambda, API gateway, Dynamo DB), cutting administrative tasks by 50% and improving internal workflow efficiency."
             ].map((text, i) => (
-              <li key={i} className="list-item" style={{ animationDelay: `${i * 0.2}s` }}>
+              <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
                 <span className="arrow">→</span> {text}
               </li>
             ))}
@@ -42,9 +43,12 @@ function ProfessionalExperience() {
         <p><em>Dec 2020 - Aug 2023</em></p>
 
         <div className="career-dropdown" onClick={() => setExperience2Open(!isExperience2Open)}>
-          <span>My Contributions</span>
-          {isExperience2Open ? <FaChevronUp /> : <FaChevronDown />}
-        </div>
+  <span>My Contributions</span>
+  {isExperience2Open
+    ? <FaChevronUp style={{ color: '#ff6347' }} />
+    : <FaChevronDown style={{ color: '#007bff' }} />}
+</div>
+
 
         {isExperience2Open && (
           <ul className="career-list">
@@ -53,7 +57,7 @@ function ProfessionalExperience() {
               "Integrated NLTK and Google’s Speech-to-Text API for sentiment analysis, attaining 88% accuracy, and successfully presented the solution to the CEO and stakeholders.",
               "Utilized Flask to build RESTful APIs, and integrated it with Vue.js to deliver seamless user experiences for telecom clients."
             ].map((text, i) => (
-              <li key={i} className="list-item" style={{ animationDelay: `${i * 0.2}s` }}>
+              <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
                 <span className="arrow">→</span> {text}
               </li>
             ))}

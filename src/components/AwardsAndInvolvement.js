@@ -1,27 +1,46 @@
-import React, { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+
+const certificates = [
+  process.env.PUBLIC_URL + '/certs/Dalbir_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Dan_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Marty_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Poo_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Nisha_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Vignesh_recognition-1.png',
+  process.env.PUBLIC_URL + '/certs/Expert.png',
+  process.env.PUBLIC_URL + '/certs/Genius.png'
+];
 
 function AwardsAndInvolvement() {
-  const [isAwardsOpen, setIsAwardsOpen] = useState(false);
-  const toggleAwards = () => setIsAwardsOpen(!isAwardsOpen);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % certificates.length);
+    }, 3000); // 5 seconds per slide
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="awards-involvement" id="awards-involvement">
-      <div className="awards-header" onClick={toggleAwards}>
-        <h2>
-          Awards and Involvement
-        </h2>
-        <span className="dropdown-icon">
-          {isAwardsOpen ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-        </span>
+      <h2 className="awards-heading">Awards and Involvement</h2>
+
+      <div className="achievements-box">
+        <ul>
+          <li>Trimble Bravo Award (6x) – Recognized for project excellence.</li>
+          <li>Winner – Poster Presentations, Tech Quizzes (200+ participants).</li>
+          <li>Completed Eggplant Certification - Expert and Genius</li>
+        </ul>
       </div>
 
-      {isAwardsOpen && (
-        <ul className="award-list">
-          <li>Trimble Bravo Award (6x) – High-impact project delivery.</li>
-          <li>Winner – Paper & Poster Presentations, College Quiz competitions.</li>
-        </ul>
-      )}
+      <div className="auto-carousel">
+        <img
+          src={certificates[currentIndex]}
+          alt={`Certificate ${currentIndex + 1}`}
+          className="full-cert-image"
+        />
+      </div>
     </section>
   );
 }

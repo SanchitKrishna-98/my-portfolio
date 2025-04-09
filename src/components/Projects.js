@@ -1,58 +1,104 @@
-import React, { useState } from 'react';
-import { FaReact, FaNodeJs, FaGithub} from 'react-icons/fa';
+import React, { useEffect, useState } from 'react';
+import {
+  FaGithub
+} from 'react-icons/fa';
 
 function Projects() {
-  const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState([]);
 
-  const toggleProject1 = () => setIsOpen1(!isOpen1);
-  const toggleProject2 = () => setIsOpen2(!isOpen2);
+  useEffect(() => {
+    let delay = 300;
+    const timeouts = [];
+
+    for (let i = 0; i < projects.length; i++) {
+      const timeout = setTimeout(() => {
+        setVisibleProjects((prev) => [...prev, i]);
+      }, i * delay);
+      timeouts.push(timeout);
+    }
+
+    return () => timeouts.forEach(clearTimeout);
+  }, []);
 
   return (
     <section className="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-
-      {/* Project 1 */}
-      <div className="project">
-        <div className="project-header" onClick={toggleProject1}>
-          <h3>WalkMate - ML-Enhanced Student Walking Companion</h3>
-          <span>{isOpen1 ? <FaReact /> : <FaNodeJs />}</span>
-        </div>
-        {isOpen1 && (
-          <div className="project-details">
-            <p>
-              A machine learning-powered app for matching students with walking companions.
-              Built with React, FastAPI, and AWS.
-            </p>
-            <a href="https://github.com/your-username/WalkMate" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={20} />
+      <h2>Projects</h2>
+      {projects.map((project, index) =>
+        visibleProjects.includes(index) ? (
+          <div
+            className="project-card animated"
+            key={index}
+            style={{ animationDelay: `${index * 0.3}s` }}
+          >
+            <h3>{project.title}</h3>
+            <p className="tech">{project.tech}</p>
+            <ul>
+              {project.description.map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ul>
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <FaGithub size={20} /> View on GitHub
             </a>
           </div>
-        )}
-      </div>
-
-      {/* Project 2 */}
-      <div className="project">
-        <div className="project-header" onClick={toggleProject2}>
-          <h3>Color Suggestions Using Skin Tone Detection</h3>
-          <span>{isOpen2 ? <FaReact /> : <FaNodeJs />}</span>
-        </div>
-        {isOpen2 && (
-          <div className="project-details">
-            <p>
-              Real-time skin tone detection for personalized clothing color recommendations.
-              Built using OpenCV and PyTorch.
-            </p>
-            <a href="https://github.com/your-username/SkinToneColorRecommendation" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={20} />
-            </a>
-          </div>
-        )}
-      </div>
+        ) : null
+      )}
     </section>
   );
 }
+
+const projects = [
+  {
+    title: 'WalkMate – ML-Enhanced Student Walking Companion',
+    tech: 'React.js, FastAPI, AWS, PyTorch, Docker',
+    description: [
+      'Built a Neural Collaborative Filtering (NCF) model in PyTorch for walkmate matching, increasing success by 60%.',
+      'Integrated LSTM Autoencoders & Isolation Forest for anomaly detection, reducing incidents by 45%.',
+      'Implemented real-time SOS alerts in a React.js & Flask app deployed on AWS.',
+    ],
+    github: 'https://github.com/your-username/WalkMate',
+  },
+  {
+    title: 'Color Suggestions Using Skin Tone Detection',
+    tech: 'OpenCV, PyTorch, MobileNet, EfficientNet',
+    description: [
+      'Built a real-time skin tone detection system with OpenCV and K-Means, achieving 95%+ accuracy and <1s latency.',
+      'Integrated CNN-based models for personalized color recommendations under noisy/poor lighting conditions.',
+    ],
+    github: 'https://github.com/your-username/SkinToneColorRecommendation',
+  },
+  {
+    title: 'Pintos OS – Threading Component',
+    tech: 'C, Pintos OS, Docker, Git',
+    description: [
+      'Designed threading components with synchronization (mutexes, condition vars) to resolve concurrency issues.',
+      'Refined thread scheduling with 4.4BSD logic, improving resource usage and system reliability.',
+    ],
+    github: 'https://github.com/your-username/Pintos-OS',
+  },
+  {
+    title: 'AeroSwift – Drone Delivery with RL',
+    tech: 'Python, PyTorch, OpenAI Gym, Matplotlib',
+    description: [
+      'Simulated drone delivery using SARSA, Q-Learning, and DQN in 6x6 stochastic grid environments.',
+      'Trained drones to minimize delivery time with obstacle navigation and reward-based learning.',
+    ],
+    github: 'https://github.com/your-username/AeroSwift',
+  },
+  {
+    title: 'Start-up Success Prediction',
+    tech: 'Python, XGBoost, scikit-learn, Streamlit',
+    description: [
+      'Built models (KNN, Naive Bayes, Logistic Regression, XGBoost) achieving 87.5% accuracy on startup data.',
+      'Developed an interactive Streamlit app to visualize predictions and improve user insights.',
+    ],
+    github: 'https://github.com/your-username/startup-success-predictor',
+  },
+];
 
 export default Projects;
