@@ -37,14 +37,14 @@ function Projects() {
                 <li key={i}>{line}</li>
               ))}
             </ul>
-            <a
+            {/*<a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               <FaGithub size={20} /> View on GitHub
-            </a>
+            </a>*/}
           </div>
         ) : null
       )}
@@ -88,7 +88,7 @@ const projects = [
       'Simulated drone delivery using SARSA, Q-Learning, and DQN in 6x6 stochastic grid environments.',
       'Trained drones to minimize delivery time with obstacle navigation and reward-based learning.',
     ],
-    github: 'https://github.com/your-username/AeroSwift',
+    github: 'https://github.com/SanchitKrishna-98/RL-AutonomousDroneDelivery',
   },
   {
     title: 'Start-up Success Prediction',
