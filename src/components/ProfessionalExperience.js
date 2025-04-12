@@ -24,9 +24,11 @@ function ProfessionalExperience() {
         {isExperience1Open && (
           <ul className="career-list">
             {[
-              "Built a Vue.js interface for precision path planning with AutoSync integration to connected farm cloud systems, boosting user acquisition for agricultural leaders like John Deere, Case IH, and Horsch.",
-              "Contributed in the development of the Vue Field Manager for Trimble Agriculture Solutions, which turned out to be a driving factor in a $2 billion joint venture between AGCO and Trimble.",
-              "Deployed a React and AWS-based interview management dashboard (Lambda, API gateway, Dynamo DB), cutting administrative tasks by 50% and improving internal workflow efficiency."
+              "Developed a scalable Vue.js interface for precision path planning using MapLibre and Trimble’s ALK tile server, visualizing real-time GeoJSON paths for autonomous tractors—adopted by AGCO, John Deere, Case IH, and Horsch.",
+              "Architected the Field Manager web app, integrating TileServer APIs to render map data with features like guidance lines, landmarks, and task overlays—contributed to AGCO's $2B acquisition of Trimble Ag.",
+              "Built a metrics-driven analytics dashboard using AWS (Lambda, API Gateway, DynamoDB), automating reporting workflows and saving over 15 hours of manual effort per sprint.",
+              "Streamlined deployments using CI/CD pipelines, accelerating development cycles and ensuring stable rollouts for frontend and backend services.",
+              "Created interactive sprint performance dashboards by integrating Jira data into Domo, enabling automated visualization and agile project tracking."
             ].map((text, i) => (
               <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
                 <span className="arrow">→</span> {text}
@@ -53,9 +55,9 @@ function ProfessionalExperience() {
         {isExperience2Open && (
           <ul className="career-list">
             {[
-              "Engineered a “Smart Call Center” dashboard for a U.S. telecom client using Vue.js and Python Flask, achieving a 35% reduction in customer response time.",
-              "Integrated NLTK and Google’s Speech-to-Text API for sentiment analysis, attaining 88% accuracy, and successfully presented the solution to the CEO and stakeholders.",
-              "Utilized Flask to build RESTful APIs, and integrated it with Vue.js to deliver seamless user experiences for telecom clients."
+              "Created and designed a “Smart Call Center” dashboard for a telecom client using Flask and Vue.js, reducing customer response time by ≅35%.",
+              "IIntegrated a sentiment analysis pipeline using NLTK and Google’s Speech-to-Text API with 88% accuracy; presented the solution to the CEO and stakeholders.",
+              "Engineered a Kafka-based streaming pipeline processing 100K+ events/day, reducing latency by 60% and enhancing system throughput and fault tolerance."
             ].map((text, i) => (
               <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
                 <span className="arrow">→</span> {text}

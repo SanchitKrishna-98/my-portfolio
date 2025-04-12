@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-title">
-        <h1><FaRocket size={40} /> Welcome to My Portfolio!!</h1>
+        <h1><FaRocket size={40} />Hello, World! Meet my work — crafted with code and creativity.</h1>
       </div>
       <nav>
         <ul className="nav-links">

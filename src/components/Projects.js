@@ -59,7 +59,6 @@ const projects = [
       'Integrated LSTM Autoencoders & Isolation Forest for anomaly detection, reducing incidents by 45%.',
       'Implemented real-time SOS alerts in a React.js & Flask app deployed on AWS.',
     ],
-    github: 'https://github.com/your-username/WalkMate',
   },
   {
     title: 'Color Suggestions Using Skin Tone Detection',
@@ -68,7 +67,6 @@ const projects = [
       'Built a real-time skin tone detection system with OpenCV and K-Means, achieving 95%+ accuracy and <1s latency.',
       'Integrated CNN-based models for personalized color recommendations under noisy/poor lighting conditions.',
     ],
-    github: 'https://github.com/your-username/SkinToneColorRecommendation',
   },
   {
     title: 'Pintos OS – Threading Component',
@@ -77,43 +75,42 @@ const projects = [
       'Designed threading components with synchronization (mutexes, condition vars) to resolve concurrency issues.',
       'Refined thread scheduling with 4.4BSD logic, improving resource usage and system reliability.',
     ],
-    github: 'https://github.com/your-username/Pintos-OS',
   },
   {
     title: 'AeroSwift – Drone Delivery with RL',
     tech: 'Python, PyTorch, OpenAI Gym, Matplotlib',
     description: [
-      'Simulated drone delivery using SARSA, Q-Learning, and DQN in 6x6 stochastic grid environments.',
-      'Trained drones to minimize delivery time with obstacle navigation and reward-based learning.',
+      'Constructed an AeroSwift framework for drone delivery, addressing single-agent and multi-agent scenarios in stochastic environments.',
+      'Optimized delivery routes using SARSA, DQN, and Q-Learning, achieving efficient navigation.',
+      'Simulated a 6×6 grid with dynamic obstacles and reward structures, yielding consistent learning improvements over 500+ episodes.',
     ],
-    github: 'https://github.com/SanchitKrishna-98/RL-AutonomousDroneDelivery',
   },
   {
     title: 'Start-up Success Prediction',
-    tech: 'Python, XGBoost, scikit-learn, Streamlit',
+    tech: 'Python, Pandas, scikit-learn, Matplotlib, Streamlit',
     description: [
-      'Built models (KNN, Naive Bayes, Logistic Regression, XGBoost) achieving 87.5% accuracy on startup data.',
-      'Developed an interactive Streamlit app to visualize predictions and improve user insights.',
+      'Constructed an end-to-end machine learning pipeline: performed extensive EDA, feature selection, missing value imputation, and normalization.',
+      'Trained machine learning models (KNN, Naive Bayes, Logistic Regression, Random Forest, XGBoost, SVM) on Kaggle’s Startup Prediction dataset, achieving 87.5% accuracy with XGBoost.',
+      'Launched an interactive Streamlit-based webpage to visualize predictions and analyze 10,000+ entries, enabling data-driven decision-making for early-stage investors and entrepreneurs by identifying key success factors.',
     ],
-    github: 'https://github.com/your-username/startup-success-predictor',
   },
   {
-    title: 'Work-Life Balance Classification',
+    title: 'Employee Churn Prediction',
     tech: 'R, Grid Search, dplyr, tidyr, caret, ggplot2',
     description: [
-      'Performed classification on IBM HR Analytics dataset using KNN, SVM, RF, and XGBoost, achieving 94.26% accuracy with SVM.',
-      'Fine-tuned SVM hyperparameters (C=1, γ=1) using grid search with 80-20 train-test split.',
+      'Built an end-to-end data pipeline using tidyverse in R, performing data cleaning (missing value handling, label encoding), feature engineering, outlier detection, and scaling for the IBM HR Analytics dataset.',
+      'Conducted EDA on 1,470 employee records to identify trends in attrition, job satisfaction, and overtime behavior.',
+      'Trained and evaluated ML models (K-NN, SVM, Random Forest, XGBoost), achieving 94.26% accuracy with SVM, and identified key predictors of poor work-life balance—providing actionable insights to improve HR policies and retention.',
     ],
-    github: 'https://github.com/your-username/work-life-balance-classification',
   },
   {
     title: 'Sentiment Analysis on IMDb Movie Reviews',
     tech: 'Python, NLP, TensorFlow, Matplotlib',
     description: [
-      'Built and optimized LSTM, BiLSTM, BERT, and CNN models for sentiment analysis, achieving ~90% accuracy.',
-      'Conducted hyperparameter tuning and reduced model training time by 30% while maintaining accuracy.',
+      'Created a robust NLP pipeline with text preprocessing (tokenization, stopword removal, stemming), BERT embeddings, and sequence padding.',
+      'Built and optimized neural network architectures (LSTM, Bidirectional LSTM, BERT, CNN) for sentiment analysis, achieving nearly 90% accuracy.',
+      'Conducted hyperparameter tuning and comparative analysis, reducing model training time by 30% while maintaining performance—demonstrating potential for real-time content moderation and customer feedback analytics in media platforms.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
   },
 ];
 
