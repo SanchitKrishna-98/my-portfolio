@@ -56,9 +56,9 @@ const projects = [
     tech: 'OpenCV, PyTorch, Spring Boot, React',
     description: [
       'Implemented a real-time skin tone detection system using OpenCV, K-Means, and EfficientNet with over 90% accuracy and sub-second latency, handling poor lighting and noisy images.',
-      'Integrated CNN-based models for personalized color recommendations under noisy/poor lighting conditions.',
+      'Delivered a personalized solution in a Java Spring Boot and React web app on AWS, providing personalized clothing and skincare suggestions via Amazon APIs, tested by 50+ students with 80% real-world accuracy.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/your-username/skintonerec',
   },
   {
     title: 'WalkMate – ML-Enhanced Student Walking Companion',
@@ -68,7 +68,7 @@ const projects = [
       'Integrated LSTM Autoencoders & Isolation Forest for anomaly detection, reducing incidents by 45%.',
       'Implemented real-time SOS alerts in a React.js & Flask app deployed on AWS.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/your-username/walkmate',
   },
   {
     title: 'AeroSwift – Reinforcement Learning for Drone Delivery',
@@ -88,7 +88,7 @@ const projects = [
       'Trained machine learning models (KNN, Naive Bayes, Logistic Regression, Random Forest, XGBoost, SVM) on Kaggle’s Startup Prediction dataset, achieving 87.5% accuracy with XGBoost.',
       'Launched an interactive Streamlit-based webpage to visualize predictions and analyze 10,000+ entries, enabling data-driven decision-making for early-stage investors and entrepreneurs by identifying key success factors.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/your-username/startup-success-prediction',
   },
   {
     title: 'Implementing the Threading Component of Pintos OS',
@@ -97,7 +97,7 @@ const projects = [
       'Designed and integrated threading components with synchronization primitives like mutexes and condition variables, effectively mitigating concurrency issues.',
       'Refined thread scheduling algorithms based on the 4.4BSD scheduler, enhancing resource allocation and system reliability through rigorous testing and debugging in a kernel-level environment.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/your-username/Pintos-OS',
   },
   {
     title: 'Employee Churn Prediction',
@@ -107,7 +107,7 @@ const projects = [
       'Conducted EDA on 1,470 employee records to identify trends in attrition, job satisfaction, and overtime behavior.',
       'Trained and evaluated ML models (K-NN, SVM, Random Forest, XGBoost), achieving 94.26% accuracy with SVM, and identified key predictors of poor work-life balance—providing actionable insights to improve HR policies and retention.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/SanchitKrishna-98/Employee-churn-prediction',
   },
   {
     title: 'Sentiment Analysis on IMDb Movie Reviews',
@@ -117,7 +117,7 @@ const projects = [
       'Built and optimized neural network architectures (LSTM, Bidirectional LSTM, BERT, CNN) for sentiment analysis, achieving nearly 90% accuracy.',
       'Conducted hyperparameter tuning and comparative analysis, reducing model training time by 30% while maintaining performance—demonstrating potential for real-time content moderation and customer feedback analytics in media platforms.',
     ],
-    github: 'https://github.com/your-username/imdb-sentiment-analysis',
+    github: 'https://github.com/SanchitKrishna-98/DeepLearning',
   },
   {
     title: 'Aerobook - Airline Booking Management System',

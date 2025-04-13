@@ -31,7 +31,7 @@ function AwardsAndInvolvement() {
   <ul>
     <li>Trimble Bravo Award (6x) – Recognized for project excellence.</li>
     <li>Winner – Poster Presentations, Tech Quizzes (200+ participants).</li>
-    <li>Completed Eggplant Certification - Expert and Genius</li>
+    <li>Completed Eggplant Certification - Expert and Genius Levels</li>
     <li>
       Educational Blog –{' '}
       <a
