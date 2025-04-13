@@ -64,7 +64,7 @@ const projects = [
     title: 'WalkMate – ML-Enhanced Student Walking Companion',
     tech: 'React.js, FastAPI, AWS, PyTorch, Docker',
     description: [
-      'Built a Neural Collaborative Filtering (NCF) model in PyTorch for walkmate matching, increasing success by 60%.',
+      'Built a modular Neural Collaborative Filtering (NCF) model in PyTorch using Object-Oriented Programming (OOP) principles, achieving a 60% improvement in user match success through personalized recommendations—enhancing peer-to-peer engagement and campus safety participation.',
       'Integrated LSTM Autoencoders & Isolation Forest for anomaly detection, reducing incidents by 45%.',
       'Implemented real-time SOS alerts in a React.js & Flask app deployed on AWS.',
     ],

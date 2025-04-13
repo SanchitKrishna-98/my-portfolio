@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 function TechnicalSkills() {
   const skills = {
     'Programming Languages & Scripting': [
-      'Python', 'Java', 'C', 'R', 'SQL', 'JavaScript', 'HTML5', 'CSS3', 'Bash'
+      'Python', 'Java', 'C', 'R', 'SQL', 'JavaScript', 'HTML5', 'CSS3', 'OOPs', 'Bash'
     ],
     'Web & Full-Stack Development': [
       'Vue.js', 'React', 'Angular', 'Flask', 'REST APIs', 'FAST APIs'
