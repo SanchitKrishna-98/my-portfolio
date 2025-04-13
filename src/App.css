@@ -59,6 +59,10 @@ p {
   z-index: 10;
 }
 
+.hero p{
+  font-size: calc(var(--heading-font-size) * 0.8);
+}
+
 .header-title h1 {
   font-size: calc(var(--heading-font-size) * 1.3);
   color: #fff;
@@ -88,19 +92,51 @@ p {
 .social-icons {
   display: flex;
   margin-left: auto;
+  margin-right: 20px;
   justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  overflow: visible;
 }
 
 .social-icons a {
   color: white;
-  margin: 0 5px;
+  margin: 0 10px;
   transition: color 0.3s ease;
   padding-top: 10px;
+  position: relative; /* Needed for tooltip positioning */
+  text-decoration: none;
 }
 
 .social-icons a:hover {
   color: #ff6347;
 }
+
+/* Tooltip Styling */
+.social-icons a::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 50%; /* Show tooltip above the icon */
+  left: 50%;
+  transform: translateX(50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 9999;
+}
+
+.social-icons a:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-3px); /* slight lift */
+}
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -148,13 +184,40 @@ p {
   text-align: center;
 }
 
+.about 
+
 /* Education */
 .education-item {
   background-color: #fff;
   padding: var(--base-padding);
   margin-bottom: var(--base-margin);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card {
+  background-color: #fff;
+  padding: var(--section-padding);
+  margin-bottom: var(--base-margin);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.education-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header h3 {
+  margin-bottom: 6px;
+}
+
+.card-header p {
+  margin-bottom: 4px;
+  color: #555;
 }
 
 /* Dropdown styling for courses */
@@ -190,6 +253,27 @@ p {
 }
 
 .course-list li:hover {
+  background-color: #e0e0e0;
+}
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.course-tag {
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  color: #333;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.course-tag:hover {
   background-color: #e0e0e0;
 }
 

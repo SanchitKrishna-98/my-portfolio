@@ -24,11 +24,10 @@ function ProfessionalExperience() {
         {isExperience1Open && (
           <ul className="career-list">
             {[
-              "Developed a scalable Vue.js interface for precision path planning using MapLibre and Trimble’s ALK tile server, visualizing real-time GeoJSON paths for autonomous tractors—adopted by AGCO, John Deere, Case IH, and Horsch.",
-              "Architected the Field Manager web app, integrating TileServer APIs to render map data with features like guidance lines, landmarks, and task overlays—contributed to AGCO's $2B acquisition of Trimble Ag.",
-              "Built a metrics-driven analytics dashboard using AWS (Lambda, API Gateway, DynamoDB), automating reporting workflows and saving over 15 hours of manual effort per sprint.",
-              "Streamlined deployments using CI/CD pipelines, accelerating development cycles and ensuring stable rollouts for frontend and backend services.",
-              "Created interactive sprint performance dashboards by integrating Jira data into Domo, enabling automated visualization and agile project tracking."
+              "Collaborated cross-functionally to design a scalable Vue.js interface for precision path planning using MapLibre and Trimble’s ALK tile server, visualizing real-time GeoJSON paths for autonomous tractors and streamlining deployments through CI/CD pipelines — driving adoption by AGCO, John Deere, Case IH, and Horsch.",
+              "Architected and developed the Vue.js - based Field Manager for Trimble Agriculture, integrating TileServer APIs to render map data with features like guidance lines, landmarks, and task overlays—part of AGCO's $2B acquisition.",
+              "Developed and deployed a metrics-driven analytics dashboard using AWS (Lambda, API Gateway, DynamoDB), automating reporting workflows and saving over 15 hours of manual effort per month.",
+              "Designed interactive sprint performance dashboards by integrating Jira data into Domo, enabling automated visualization and reporting of sprint metrics for agile project tracking."
             ].map((text, i) => (
               <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
                 <span className="arrow">→</span> {text}
@@ -56,7 +55,7 @@ function ProfessionalExperience() {
           <ul className="career-list">
             {[
               "Created and designed a “Smart Call Center” dashboard for a telecom client using Flask and Vue.js, reducing customer response time by ≅35%.",
-              "IIntegrated a sentiment analysis pipeline using NLTK and Google’s Speech-to-Text API with 88% accuracy; presented the solution to the CEO and stakeholders.",
+              "Integrated a sentiment analysis pipeline using NLTK and Google’s Speech-to-Text API with 88% accuracy; presented the solution to the CEO and stakeholders.",
               "Engineered a Kafka-based streaming pipeline processing 100K+ events/day, reducing latency by 60% and enhancing system throughput and fault tolerance."
             ].map((text, i) => (
               <li key={i} className="list-item fade-in" style={{ animationDelay: `${i * 0.3}s` }}>

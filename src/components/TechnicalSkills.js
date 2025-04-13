@@ -3,32 +3,32 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 function TechnicalSkills() {
   const skills = {
-    'Programming & Scripting': [
+    'Programming Languages & Scripting': [
       'Python', 'Java', 'C', 'R', 'SQL', 'JavaScript', 'HTML5', 'CSS3', 'Bash'
     ],
     'Web & Full-Stack Development': [
-      'React', 'Vue.js', 'Flask', 'REST APIs', 'HTML5', 'CSS3', 'JavaScript'
+      'Vue.js', 'React', 'Angular', 'Flask', 'REST APIs', 'FAST APIs'
     ],
-    'Data Engineering & Big Data': [
+    'Machine Learning & Deep Learning': [
+      'scikit-learn', 'TensorFlow', 'PyTorch', 'Keras', 'Statsmodels',
+      'Pandas', 'NumPy', 'Streamlit'
+    ],
+    'Data Engineering & Cloud': [
       'Apache NiFi', 'Apache Kafka', 'Apache Spark', 'Hadoop', 'Hive',
-      'Docker', 'AWS (Lambda, EC2, S3)', 'GCP (BigQuery, Cloud Storage – basic)'
+      'AWS (Lambda, EC2, S3)', 'GCP (BigQuery, Cloud Storage – basic)', 'Docker'
     ],
-    'Machine Learning & Analytics': [
-      'scikit-learn', 'TensorFlow', 'PyTorch', 'Keras', 'Streamlit',
-      'Pandas', 'NumPy', 'Statsmodels'
-    ],
-    'Databases & Visualization': [
-      'MySQL', 'PostgreSQL', 'MongoDB', 'Matplotlib', 'Seaborn',
-      'Tableau', 'Power BI', 'Plotly', 'ggplot2', 'Domo'
-    ],
-    'Programming & Statistical Tools': [
-      'Jupyter Notebook', 'Visula Studio code', 'Anaconda', 'RStudio'
+    'Databases & BI Tools': [
+      'MySQL', 'PostgreSQL', 'MongoDB', 'Matplotlib', 'Seaborn', 'Plotly', 
+      'Tableau', 'Power BI', 'ggplot2', 'Domo'
     ],
     'Tools & Platforms': [
       'Git', 'GitHub', 'Postman', 'Jira', 'Confluence', 'Linux', 'Agile/Scrum'
     ],
     'Testing & Automation': [
       'Eggplant', 'Selenium', 'TestNG', 'Cucumber', 'Appium'
+    ],
+    'Programming & Statistical Tools': [
+      'Jupyter Notebook', 'Visual Studio Code', 'Anaconda', 'RStudio'
     ]
   };
 

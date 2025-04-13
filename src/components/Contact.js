@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -39,6 +39,17 @@ function Contact() {
             className="contact-link"
           >
             <FaGithub size={20} /> GitHub
+          </a>
+        </p>
+        <p>
+          View my resume{' '}
+          <a
+            href="https://drive.google.com/file/d/1feTwFGh9bo_6PvEkF2PEr9AxH7a5jJVW/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            <FaFileAlt size={20} /> Resume
           </a>
         </p>
       </div>

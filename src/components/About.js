@@ -7,10 +7,10 @@ function About() {
         About Me
       </h2>
       <p>
-      I'm a Computer Science grad student at the University at Buffalo, specializing in Artificial Intelligence and Machine Learning—basically, teaching machines to think while I survive off coffee and curiosity. I love blending AI/ML with full-stack development to build solutions that are not just fast and efficient, but also make you say, “Wow, that’s actually useful!”
+      Hi there! I’m a Computer Science graduate from the University at Buffalo, with a passion for Artificial Intelligence and Machine Learning, teaching machines to think while I survive off coffee and curiosity. I love bringing AI/ML to life through full-stack development, crafting solutions that are not only smart and scalable, but make people say, “Wow, that’s actually useful!”
       </p>
       <p>
-      With over three years of experience in software development, I’ve worked through the trenches of the SDLC and danced to the rhythm of Agile sprints. From crafting sleek UI's with Vue.js and React to wrangling backend beasts in Python and Java, I’ve done a bit of everything. My adventures include helping build precision agriculture tools at Trimble (Yep, that’s the same project that ended up in a $2 billion AGCO deal) and rolling out smart dashboards at Payoda for telecom giants like Verizon and T-Mobile.
+      With over three years of hands-on experience in software development, I’ve navigated the trenches of the SDLC and danced through Agile sprints. I specialize in building responsive frontends with Vue.js and React, and developing robust backend systems using Python and Java. Some highlights? Helping build precision agriculture tools at Trimble (yes, the one that was part of a $2B AGCO deal), and developing smart dashboards at Payoda for prominent telecom giants.
       </p>
       <p>
       Tech is my playground—and I’m just getting started.
