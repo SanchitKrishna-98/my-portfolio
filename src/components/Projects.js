@@ -97,7 +97,7 @@ const projects = [
       'Designed and integrated threading components with synchronization primitives like mutexes and condition variables, effectively mitigating concurrency issues.',
       'Refined thread scheduling algorithms based on the 4.4BSD scheduler, enhancing resource allocation and system reliability through rigorous testing and debugging in a kernel-level environment.',
     ],
-    github: 'https://github.com/your-username/Pintos-OS',
+    github: 'https://github.com/SanchitKrishna-98/Threading-component-pintos-os',
   },
   {
     title: 'Employee Churn Prediction',
