@@ -36,7 +36,7 @@ function Header() {
             <FaEnvelope size={25} />
           </a>
           <a 
-            href="https://drive.google.com/file/d/15Mb8ppQ7ZLkrFQQ4485L1JO1TWp4A1AC/view?usp=drive_link" 
+            href="https://drive.google.com/file/d/1NJz3S0C-Tq6owN6Sl5bz5kEPcShzIVbD/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer"
             data-tooltip="View Resume"

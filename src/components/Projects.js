@@ -29,20 +29,24 @@ function Projects() {
             style={{ animationDelay: `${index * 0.3}s` }}
           >
             <h3>{project.title}</h3>
-            <p className="tech">{project.tech}</p>
+            <div className="tech-stack">
+              {project.tech.split(',').map((tech, i) => (
+                <span key={i} className="tech-chip">{tech.trim()}</span>
+              ))}
+            </div>
             <ul>
               {project.description.map((line, i) => (
                 <li key={i}>{line}</li>
               ))}
             </ul>
-            {<a
+            <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               <FaGithub size={20} /> View on GitHub
-            </a>}
+            </a>
           </div>
         ) : null
       )}
@@ -88,7 +92,7 @@ const projects = [
       'Trained machine learning models (KNN, Naive Bayes, Logistic Regression, Random Forest, XGBoost, SVM) on Kaggle’s Startup Prediction dataset, achieving 87.5% accuracy with XGBoost.',
       'Launched an interactive Streamlit-based webpage to visualize predictions and analyze 10,000+ entries, enabling data-driven decision-making for early-stage investors and entrepreneurs by identifying key success factors.',
     ],
-    github: 'https://github.com/your-username/startup-success-prediction',
+    github: 'https://github.com/SanchitKrishna-98/startup_success_prediction',
   },
   {
     title: 'Implementing the Threading Component of Pintos OS',

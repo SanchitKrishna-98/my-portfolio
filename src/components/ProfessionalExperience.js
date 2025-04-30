@@ -54,7 +54,7 @@ function ProfessionalExperience() {
         {isExperience2Open && (
           <ul className="career-list">
             {[
-              "Created and designed a “Smart Call Center” dashboard for a telecom client using Flask and Vue.js, reducing customer response time by ≅35%.",
+              "Created a “Smart Call Center” dashboard for a telecom client using Flask and Vue.js, reducing customer response time by ≅35% and generating close to $50K in revenue.",
               "Integrated a sentiment analysis pipeline using NLTK and Google’s Speech-to-Text API with 88% accuracy; presented the solution to the CEO and stakeholders.",
               "Engineered a Kafka-based streaming pipeline processing 100K+ events/day, reducing latency by 60% and enhancing system throughput and fault tolerance."
             ].map((text, i) => (
