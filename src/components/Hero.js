@@ -13,7 +13,7 @@ function Hero() {
           Seattle, Washington
         </div>
         <p>
-          Ex-SDE @ Trimble | Full Stack Developer | CS Grad, UB '25 | Passionate about AI & ML | Data Science Enthusiast | Currently compiling a future in tech (and coffee ☕)
+          SDE II | Ex-Trimble | Scaled Systems Behind Trimble’s $2B AgTech Joint Venture | Python, AWS, Vue/React, ML | Currently compiling a future in tech (and coffee ☕)
         </p>
       </div>
     </section>

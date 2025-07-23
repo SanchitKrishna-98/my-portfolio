@@ -54,23 +54,23 @@ function Projects() {
   );
 }
 
+// Updated projects array
 const projects = [
   {
-    title: 'SkinToneRec – Real-Time Skin Tone & Product Suggestion System',
-    tech: 'OpenCV, PyTorch, Spring Boot, React',
+    title: 'SkinToneRec – Real-Time Skin Tone Recognition & Product Suggestion System',
+    tech: 'OpenCV, PyTorch, Flask, React',
     description: [
-      'Implemented a real-time skin tone detection system using OpenCV, K-Means, and EfficientNet with over 90% accuracy and sub-second latency, handling poor lighting and noisy images.',
-      'Delivered a personalized solution in a Java Spring Boot and React web app on AWS, providing personalized clothing and skincare suggestions via Amazon APIs, tested by 50+ students with 80% real-world accuracy.',
+      'Implemented a real-time skin tone and gender detection system using OpenCV and deep learning models (EfficientNet-B0, DenseNet121, Vision Transformer) with 92% accuracy, applying techniques to enhance image quality under poor lighting.',
+      'Delivered a personalized solution through a Flask backend and React frontend deployed on AWS, providing clothing and skincare recommendations via Amazon APIs, tested by 50+ students with 80% real-world accuracy.',
     ],
     github: 'https://github.com/your-username/skintonerec',
   },
   {
-    title: 'WalkMate – ML-Enhanced Student Walking Companion',
-    tech: 'React.js, FastAPI, AWS, PyTorch, Docker',
+    title: 'WalkMate – ML-Powered Student Safety Companion',
+    tech: 'React.js, FastAPI, Google Maps API, Docker',
     description: [
-      'Built a modular Neural Collaborative Filtering (NCF) model in PyTorch using Object-Oriented Programming (OOP) principles, achieving a 60% improvement in user match success through personalized recommendations—enhancing peer-to-peer engagement and campus safety participation.',
-      'Integrated LSTM Autoencoders & Isolation Forest for anomaly detection, reducing incidents by 45%.',
-      'Implemented real-time SOS alerts in a React.js & Flask app deployed on AWS.',
+      'Built and containerized a full-stack safety companion application using React.js, FastAPI, Docker, and Google Maps API, enabling real-time heatmaps and smart route recommendations, reducing unsafe-zone entries by 70%.',
+      'Developed a Neural Collaborative Filtering model in PyTorch to drive personalized companion matching, increasing match acceptance rates by 80% and boosting daily active usage by 75%.',
     ],
     github: 'https://github.com/your-username/walkmate',
   },
@@ -78,9 +78,8 @@ const projects = [
     title: 'AeroSwift – Reinforcement Learning for Drone Delivery',
     tech: 'Python, PyTorch, OpenAI Gym, Matplotlib',
     description: [
-      'Constructed an AeroSwift framework for drone delivery, addressing single-agent and multi-agent scenarios in stochastic environments.',
-      'Optimized delivery routes using SARSA, DQN, and Q-Learning, achieving efficient navigation.',
-      'Simulated a 6×6 grid with dynamic obstacles and reward structures, yielding consistent learning improvements over 500+ episodes.',
+      'Constructed the AeroSwift framework for drone delivery, addressing single-agent and multi-agent scenarios in stochastic environments, and optimized delivery routes using SARSA, DQN, and Q-Learning, achieving efficient navigation.',
+      'Simulated a 6×6 grid with obstacle and reward modeling, optimizing drone routes over 500+ RL episodes using Q-Learning and DQN, achieving 30% cost and 50% time reduction in last-mile delivery.',
     ],
     github: 'https://github.com/SanchitKrishna-98/AeroSwift',
   },

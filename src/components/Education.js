@@ -27,7 +27,7 @@ function Education() {
         <div className="card-header">
           <h3><FaGraduationCap /> Master of Science in Computer Science</h3>
           <p><FaUniversity /> University at Buffalo, SUNY | Buffalo, NY</p>
-          <p>Expected Graduation: May 2025</p>
+          <p>Graduated: May 2025</p>
         </div>
   
         <div className="course-dropdown" onClick={toggleMasterCourses}>

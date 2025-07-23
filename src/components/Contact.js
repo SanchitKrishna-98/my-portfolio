@@ -44,7 +44,7 @@ function Contact() {
         <p>
           View my resume{' '}
           <a
-            href="https://drive.google.com/file/d/1NJz3S0C-Tq6owN6Sl5bz5kEPcShzIVbD/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1digsgZi3dOi04THiTO9mrowlXUBw_M59/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
